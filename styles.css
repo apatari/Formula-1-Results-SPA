@@ -6,3 +6,18 @@
     color: crimson;
     height: 100px;
 }
+.results {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.vote {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    top: 110px;
+    z-index: 1;
+    right: 0;
+    margin: 10px;
+    background-color: #EF8354;
+}
