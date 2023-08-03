@@ -12,7 +12,7 @@
     </div>
     <div class="leftContainer">
         <button class="latest">Latest Race</button>
-        <form class="form">
+        <form class="form" id="raceForm">
             <select name="year" id="year">
                 <option value = "" >Select year</option>
                 <option value="2023">2023</option>
@@ -20,6 +20,7 @@
                 <option value="2021">2021</option>
             </select>
             <select name="race" id="race"></select>
+            <input type="submit" value="Get Race Results" id="submitRace">
         </form>
         <div class="results">Results Here</div>
     </div>
