@@ -28,12 +28,21 @@ function findResults() {
 
 function renderResults(data) {
     data.Results.forEach((place) => {
-        if(place.FastestLap){
-            console.log(`Fastest lap: ${place.FastestLap.Time.time}`)
-        } else {
-            console.log('No time set')
-        }
+
+        const position = document.createElement('div')
+        position.innerHTML = `
+        <hr>
+        <h3>${place.position} - ${place.Driver.givenName} ${place.Driver.familyName}</h3>
+
+        `
+
+        // if(place.FastestLap){
+        //     const fast = place.FastestLap.Time.time
+        // } else {
+        //     const fast = "No time set"
+        // } //Use this logic to add the value to the fastest lap time
         
+        document.getElementById('results').append(position)
     })
 }
 

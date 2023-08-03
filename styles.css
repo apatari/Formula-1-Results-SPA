@@ -8,13 +8,14 @@
 }
 .leftContainer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 70%;
     
 }
 
 .rightContainer {
     height: 100%;
     width: 400px;
-    position: fixed;
+    position: absolute;
     top: 110px;
     
     right: 0;
