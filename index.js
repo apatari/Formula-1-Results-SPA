@@ -23,7 +23,18 @@ function findResults() {
     
     fetch(`http://localhost:3000/${year}/${raceNumber}`)
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => renderResults(data))
+}
+
+function renderResults(data) {
+    data.Results.forEach((place) => {
+        if(place.FastestLap){
+            console.log(`Fastest lap: ${place.FastestLap.Time.time}`)
+        } else {
+            console.log('No time set')
+        }
+        
+    })
 }
 
 
