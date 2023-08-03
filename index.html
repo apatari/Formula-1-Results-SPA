@@ -10,8 +10,23 @@
     <div class="topbar">
         Formula 1 Results
     </div>
-    <div class="results">Results here</div>
-    <div class="vote">vote</div>
+    <div class="leftContainer">
+        <button class="latest">Latest Race</button>
+        <form class="form">
+            <select name="year" id="year">
+                <option >Select year</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+            </select>
+            <select name="race" id="race"></select>
+        </form>
+        <div class="results">Results Here</div>
+    </div>
+
+    <div class="rightContainer">
+        <div class="vote">Vote Here</div>
+    </div>
     
 </body>
 <script src="index.js"></script>

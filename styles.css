@@ -6,12 +6,12 @@
     color: crimson;
     height: 100px;
 }
-.results {
+.leftContainer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 
-.vote {
+.rightContainer {
     height: 100%;
     width: 400px;
     position: fixed;
@@ -19,5 +19,14 @@
     
     right: 0;
     margin: 10px;
-    background-color: #EF8354;
+    background-color: #e7a183;
+}
+
+.results {
+    margin: 15px;
+    
+}
+
+.vote {
+    margin: 15px;
 }
