@@ -27,6 +27,14 @@ function findResults() {
 }
 
 function renderResults(data) {
+    document.getElementById('results').innerHTML = ''
+    const raceInfo = document.createElement('div')
+    raceInfo.innerHTML = `
+    <h2 id="resultsHeader">${data.season} ${data.raceName}</h2>
+    `
+    
+    document.getElementById('results').append(raceInfo)
+
     data.Results.forEach((place) => {
 
         const position = document.createElement('div')
@@ -35,7 +43,7 @@ function renderResults(data) {
         <h3>${place.position} - ${place.Driver.givenName} ${place.Driver.familyName}</h3>
 
         `
-
+        position.className = 'position'
         // if(place.FastestLap){
         //     const fast = place.FastestLap.Time.time
         // } else {

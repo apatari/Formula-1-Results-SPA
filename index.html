@@ -11,18 +11,18 @@
         Formula 1 Results
     </div>
     <div class="leftContainer">
-        <button class="latest">Latest Race</button>
+        <button id="latest" class="select">Latest Race</button>
         <form class="form" id="raceForm">
-            <select name="year" id="year">
+            <select class = "select" name="year" id="year">
                 <option value = "" >Select year</option>
                 <option value="2023">2023</option>
                 <option value="2022">2022</option>
                 <option value="2021">2021</option>
             </select>
-            <select name="race" id="race"></select>
-            <input type="submit" value="Get Race Results" id="submitRace">
+            <select class="select" name="race" id="race"></select>
+            <input class="select" type="submit" value="Get Race Results" id="submitRace">
         </form>
-        <div class="results" id="results">Results Here</div>
+        <div class="results" id="results"></div>
     </div>
 
     <div class="rightContainer">

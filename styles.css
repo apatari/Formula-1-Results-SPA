@@ -12,6 +12,16 @@
     
 }
 
+#latest {
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+.select {
+    font-size: 20px;
+    margin: 3px;
+}
+
 .rightContainer {
     height: 100%;
     width: 400px;
