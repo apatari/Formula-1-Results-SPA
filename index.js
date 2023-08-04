@@ -10,7 +10,7 @@ function initialize() {
             
         } else {
             document.getElementById('race').innerHTML = ''
-            // document.getElementById('submitRace').disabled = "true"
+            document.getElementById('submitRace').disabled = "true"
         }
         
     })
