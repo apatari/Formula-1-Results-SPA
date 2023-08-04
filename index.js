@@ -43,6 +43,12 @@ function renderVotes(data) {
         <h4>${race.name}</h4>
         <h5>Votes: ${race.votes}</h5>
         `
+
+        const btn = document.createElement('button')
+        btn.innerText = "Vote"
+        btn.id = `${race.id}`
+        element.append(btn)
+
         document.getElementById('favList').append(element)
     })
 }
