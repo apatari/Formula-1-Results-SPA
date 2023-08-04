@@ -16,7 +16,17 @@ function initialize() {
         e.preventDefault()
         findResults()
     })
+
+    document.getElementById('latest').addEventListener('click', () => findLatest())
 }
+
+function findLatest() {
+    fetch('http://localhost:3000/current')
+    .then(res => res.json())
+    .then(data => renderResults(data))
+}
+
+
 function findResults() {
     const year = document.getElementById('year').value
     const raceNumber = document.getElementById('race').value
