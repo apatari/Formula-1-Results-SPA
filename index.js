@@ -47,16 +47,23 @@ function renderVotes(data) {
         const btn = document.createElement('button')
         btn.innerText = "Vote"
         btn.value = `${race.id}`
-        btn.addEventListener('click', (e) => incrementVote(e))
+        btn.addEventListener('click', (e) => getVotes(e))
         element.append(btn)
 
         document.getElementById('favList').append(element)
     })
 }
 
-function incrementVote(e) {
+function getVotes(e) {
     const raceId = parseInt(e.target.value)
-    console.log(raceId)
+    
+    fetch(`http://localhost:3000/favorite/${raceId}`)
+    .then(res => res.json())
+    .then(data => incrementVotes(data))
+}
+
+function incrementVotes(race) {
+    console.log(`${race.votes} needs to become ${parseInt(race.votes) + 1}`)
 }
 
 
