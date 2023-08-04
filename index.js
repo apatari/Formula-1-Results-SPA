@@ -40,8 +40,8 @@ function renderVotes(data) {
         element.className = "favItem"
 
         element.innerHTML = `
-        <h4 class="gp">${race.name}</h4>
-        <h5 class="race">Votes: ${race.votes}</h5>
+        <h2 class="gp">${race.name}</h2>
+        <h3 class="race">Votes: ${race.votes}</h3>
         `
 
         const btn = document.createElement('button')

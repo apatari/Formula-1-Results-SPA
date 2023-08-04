@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0px 10px;
     display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .gp {
@@ -33,7 +34,7 @@
 }
 
 .rightContainer {
-    height: 1200px;
+    height: 1100px;
     width: 400px;
     position: absolute;
     top: 110px;
