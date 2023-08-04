@@ -22,14 +22,29 @@ function initialize() {
 
     document.getElementById('latest').addEventListener('click', () => findLatest())
 
-    renderVotes()
+    findVotes()
 }
 
-function renderVotes() {
-    document.getElementById('favList').innerHTML = ''
+function findVotes() {
+    
     fetch('http://localhost:3000/favorite')
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => renderVotes(data))
+}
+
+function renderVotes(data) {
+    document.getElementById('favList').innerHTML = ''
+
+    data.forEach(race => {
+        const element = document.createElement('div')
+        element.className = "favItem"
+
+        element.innerHTML = `
+        <h4>${race.name}</h4>
+        <h5>Votes: ${race.votes}</h5>
+        `
+        document.getElementById('favList').append(element)
+    })
 }
 
 function findLatest() {
