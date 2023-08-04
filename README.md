@@ -11,3 +11,7 @@ json-server --watch results.db
 ```
 
 Keep this local server running, then open the index.html file to see the page.  It should look and function as described below.
+
+## Usage
+
+![](https://github.com/apatari/Phase-1-Project/blob/main/f1page.gif)
