@@ -5,9 +5,12 @@ function initialize() {
     const year = document.querySelector('#year')
     year.addEventListener('change', () => {
         if (year.value){
+            document.getElementById('submitRace').disabled = false
             findRaces(year.value)
+            
         } else {
             document.getElementById('race').innerHTML = ''
+            // document.getElementById('submitRace').disabled = "true"
         }
         
     })
