@@ -21,6 +21,15 @@ function initialize() {
     })
 
     document.getElementById('latest').addEventListener('click', () => findLatest())
+
+    renderVotes()
+}
+
+function renderVotes() {
+    document.getElementById('favList').innerHTML = ''
+    fetch('http://localhost:3000/favorite')
+    .then(res => res.json())
+    .then(data => console.log(data))
 }
 
 function findLatest() {
