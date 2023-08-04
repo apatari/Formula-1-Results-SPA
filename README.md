@@ -15,3 +15,13 @@ Keep this local server running, then open the index.html file to see the page.  
 ## Usage
 
 ![](https://github.com/apatari/Phase-1-Project/blob/main/f1page.gif)
+
+Simply select the year and race you'd like to see the results for.  Note that there is a handy button to see the most recent race.  Don't forget to vote for your favorite race of 2023.
+
+## Roadmap
+
+I may connect this page back to the API after my project review in order to make full use of the API.  Stay tuned.
+
+## Acknowledgment and Contributions
+
+I thank the folks behind the Ergast API for providing and maintaining the resource that this work is based on.  [Please send contributions their way](https://liberapay.com/ergast)  I'd also like to thank the folks at Flatiron school for giving me the skills and tools necessary to create this work.
