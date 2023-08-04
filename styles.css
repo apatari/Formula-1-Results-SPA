@@ -22,6 +22,12 @@
     margin: 3px;
 }
 
+.race {
+    margin: 0;
+    padding: 0px 10px;
+    display: inline-block;
+}
+
 .rightContainer {
     height: 1200px;
     width: 400px;
