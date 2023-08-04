@@ -41,14 +41,17 @@ function renderResults(data) {
         position.innerHTML = `
         <hr>
         <h3>${place.position} - ${place.Driver.givenName} ${place.Driver.familyName}</h3>
-
+        <h4>Team: ${place.Constructor.name}</h4>
         `
         position.className = 'position'
-        // if(place.FastestLap){
-        //     const fast = place.FastestLap.Time.time
-        // } else {
-        //     const fast = "No time set"
-        // } //Use this logic to add the value to the fastest lap time
+        const fast = document.createElement('p')
+        if(place.FastestLap){            
+            fast.innerText = `Fastest Lap: ${place.FastestLap.Time.time}`
+            
+        } else {
+            fast.innerText = "No time set"
+        } 
+        position.append(fast)
         
         document.getElementById('results').append(position)
     })
