@@ -22,10 +22,10 @@ function initialize() {
 
     document.getElementById('latest').addEventListener('click', () => findLatest())
 
-    findVotes()
+    loadVotes()
 }
 
-function findVotes() {
+function loadVotes() {
     
     fetch('http://localhost:3000/favorite')
     .then(res => res.json())
@@ -75,7 +75,7 @@ function incrementVotes(race) {
         )
     })
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => loadVotes())
     
 }
 

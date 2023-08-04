@@ -7074,27 +7074,27 @@
     {
       "id": 1,
       "name": "Bahrain GP",
-      "votes": "2"
+      "votes": "3"
     },
     {
       "id": 2,
       "name": "Saudi Arabian GP",
-      "votes": "0"
+      "votes": "1"
     },
     {
       "id": 3,
       "name": "Australian GP",
-      "votes": "0"
+      "votes": "1"
     },
     {
       "id": 4,
       "name": "Azerbaijan GP",
-      "votes": "0"
+      "votes": "3"
     },
     {
       "id": 5,
       "name": "Miami GP",
-      "votes": "0"
+      "votes": "1"
     },
     {
       "id": 6,
@@ -7129,7 +7129,7 @@
     {
       "id": 12,
       "name": "Belgian GP",
-      "votes": "0"
+      "votes": "8"
     }
   ],
   "current": {
