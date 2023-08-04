@@ -1,4 +1,12 @@
 {
+    "favorite": [
+        {
+            "id": 1,
+            "name": "Bahrain GP",
+            "votes": 0
+        }
+    ]
+    ,
     "current": {
         "season": "2023",
         "round": "12",
