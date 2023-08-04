@@ -46,12 +46,19 @@ function renderVotes(data) {
 
         const btn = document.createElement('button')
         btn.innerText = "Vote"
-        btn.id = `${race.id}`
+        btn.value = `${race.id}`
+        btn.addEventListener('click', (e) => incrementVote(e))
         element.append(btn)
 
         document.getElementById('favList').append(element)
     })
 }
+
+function incrementVote(e) {
+    const raceId = parseInt(e.target.value)
+    console.log(raceId)
+}
+
 
 function findLatest() {
     fetch('http://localhost:3000/current')
