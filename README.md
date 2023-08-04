@@ -7,7 +7,7 @@ This web app was designed to use the Ergast Developer API to display Formula 1 r
 In order to use this app on your own machine, first make sure that you have [json-server](https://www.npmjs.com/package/json-server) installed. From there fork and clone this repository and get the database running with the following commands in the terminal from the same folder as the repo:
 
 ```bash
-json-server --watch results.db
+json-server --watch results.json
 ```
 
 Keep this local server running, then open the index.html file to see the page.  It should look and function as described below.
