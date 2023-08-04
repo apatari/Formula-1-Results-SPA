@@ -64,6 +64,19 @@ function getVotes(e) {
 
 function incrementVotes(race) {
     console.log(`${race.votes} needs to become ${parseInt(race.votes) + 1}`)
+    fetch(`http://localhost:3000/favorite/${race.id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            "votes": `${parseInt(race.votes) + 1}`
+        }
+        )
+    })
+    .then(res => res.json())
+    .then(data => console.log(data))
+    
 }
 
 
