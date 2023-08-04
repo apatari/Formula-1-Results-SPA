@@ -10,4 +10,8 @@ In order to use this app on your own machine, first make sure that you have [jso
 json-server --watch results.json
 ```
 
-Keep this local server running, then open the index.html file to see the page.  It should look and function as described below.
+Keep this local server running, then open the index.html file to access the page.  
+
+## Usage
+
+![](https://github.com/apatari/Phase-1-Project/blob/main/f1page.gif)
