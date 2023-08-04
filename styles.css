@@ -28,6 +28,10 @@
     display: inline-block;
 }
 
+.gp {
+    height: 10px;
+}
+
 .rightContainer {
     height: 1200px;
     width: 400px;
