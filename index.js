@@ -81,9 +81,9 @@ function incrementVotes(race) {
 
 
 function findLatest() {
-    fetch('http://localhost:3000/current')
+    fetch('http://ergast.com/api/f1/current/results.json')
     .then(res => res.json())
-    .then(data => renderResults(data))
+    .then(data => renderResults(data.MRData.RaceTable.Races[0]))
 }
 
 
@@ -91,9 +91,9 @@ function findResults() {
     const year = document.getElementById('year').value
     const raceNumber = document.getElementById('race').value
     
-    fetch(`http://localhost:3000/${year}/${raceNumber}`)
+    fetch(`http://ergast.com/api/f1/${year}/${raceNumber}/results.json`)
     .then(res => res.json())
-    .then(data => renderResults(data))
+    .then(data => renderResults(data.MRData.RaceTable.Races[0]))
 }
 
 function renderResults(data) {
@@ -130,14 +130,17 @@ function renderResults(data) {
 
 function findRaces(year) {
     document.getElementById('race').innerHTML = ''
-    fetch(`http://localhost:3000/${year}`)
+    fetch(`http://ergast.com/api/f1/${year}.json`)
     .then(res => res.json())
-    .then(data => data.forEach(addRace))
+    .then(data => data.MRData.RaceTable.Races.forEach(addRace))
 }
 
 function addRace(race) {
-    const option = document.createElement('option')
-    option.value = race.id
-    option.innerText = `${race.id} - ${race.raceName}`
-    document.getElementById('race').append(option)
+    if(race.date < "2023-08-05"){
+        const option = document.createElement('option')
+        option.value = race.round
+        option.innerText = `${race.round} - ${race.raceName}`
+        document.getElementById('race').append(option)
+    }
+    
 }
