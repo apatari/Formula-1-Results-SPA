@@ -1,7 +1,10 @@
+const yearsDisplayed = 20
 
 document.addEventListener('DOMContentLoaded', () => initialize())
 
 function initialize() {
+    fillYears()
+
     const year = document.querySelector('#year')
     year.addEventListener('change', () => {
         if (year.value){
@@ -23,6 +26,15 @@ function initialize() {
     document.getElementById('latest').addEventListener('click', () => findLatest())
 
     loadVotes()
+}
+
+function fillYears() {
+    for(let i = 0; i < yearsDisplayed; i++){
+        const element = document.createElement('option')
+        element.value = 2023 - i
+        element.innerText = `${2023 - i}`
+        document.getElementById('year').append(element)
+    }
 }
 
 function loadVotes() {
