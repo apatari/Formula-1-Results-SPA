@@ -26,7 +26,7 @@ function initialize() {
     document.getElementById('latest').addEventListener('click', () => findLatest())
 
     loadVotes()
-}
+} 
 
 function fillYears() {
     for(let i = 0; i < yearsDisplayed; i++){
@@ -93,7 +93,7 @@ function incrementVotes(race) {
 
 
 function findLatest() {
-    fetch('http://ergast.com/api/f1/current/results.json')
+    fetch('http://ergast.com/api/f1/2023/last/results.json')
     .then(res => res.json())
     .then(data => renderResults(data.MRData.RaceTable.Races[0]))
 }
