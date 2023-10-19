@@ -1,0 +1,64 @@
+{
+  "favorite": [
+    {
+      "id": 1,
+      "name": "Bahrain GP",
+      "votes": "13"
+    },
+    {
+      "id": 2,
+      "name": "Saudi Arabian GP",
+      "votes": "4"
+    },
+    {
+      "id": 3,
+      "name": "Australian GP",
+      "votes": "4"
+    },
+    {
+      "id": 4,
+      "name": "Azerbaijan GP",
+      "votes": "8"
+    },
+    {
+      "id": 5,
+      "name": "Miami GP",
+      "votes": "7"
+    },
+    {
+      "id": 6,
+      "name": "Monaco GP",
+      "votes": "3"
+    },
+    {
+      "id": 7,
+      "name": "Spanish GP",
+      "votes": "1"
+    },
+    {
+      "id": 8,
+      "name": "Canadian GP",
+      "votes": "0"
+    },
+    {
+      "id": 9,
+      "name": "Austrian GP",
+      "votes": "0"
+    },
+    {
+      "id": 10,
+      "name": "British GP",
+      "votes": "0"
+    },
+    {
+      "id": 11,
+      "name": "Hungarian GP",
+      "votes": "0"
+    },
+    {
+      "id": 12,
+      "name": "Belgian GP",
+      "votes": "8"
+    }
+  ]
+}
