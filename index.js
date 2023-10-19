@@ -148,7 +148,9 @@ function findRaces(year) {
 }
 
 function addRace(race) {
-    if(race.date < "2023-08-05"){
+    const day = new Date()
+    const date_string = `${day.getFullYear()}-${day.getMonth() + 1}-${day.getDate()}`
+    if(race.date < date_string){
         const option = document.createElement('option')
         option.value = race.round
         option.innerText = `${race.round} - ${race.raceName}`
